@@ -30,7 +30,7 @@ def upload_file():
     return render_template('index.html')
 
 
-@app.route('/uploads/<filename>')
+@app.route('/uploads/string<filename>')
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
